@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack and Drizzle | Order Online</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>Stack and Drizzle</h1>
+        <p>Place Your Order</p>
+    </div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="order.html">Order Online</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main class="form-container">
+    <h2>Online Order Form</h2>
+    <img src="images/Logo.jpeg" alt="Mini Pancake Business Logo" class="logo">
+
+    <p>Complete the form below to place your order.</p>
+
+    <div id="form-message"></div>
+
+    <form id="order-form">
+        <fieldset>
+            <legend>Customer Information</legend>
+
+            <label for="customer-name">Name *</label>
+            <input type="text" id="customer-name" name="customerName" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email">
+        </fieldset>
+
+        <fieldset>
+            <legend>Order Details</legend>
+
+            <label for="order-size">Order Size *</label>
+            <select id="order-size" name="orderSize" required>
+                <option value="">-- Select a size --</option>
+                <option value="6" data-price="6">10 Mini Pancakes - $8</option>
+                <option value="12" data-price="10">15 Mini Pancakes - $10</option>
+                <option value="24" data-price="18">20 Mini Pancakes - $18</option>
+            </select>
+
+            <label for="flavor">Pancake Flavor *</label>
+            <select id="flavor" name="flavor" required>
+                <option value="">-- Select a flavor --</option>
+                <option value="Original">Original</option>
+                <option value="Strawberry">Strawberry</option>
+                <option value="Chocolate">Chocolate</option>
+            </select>
+
+            <p class="form-label">Toppings</p>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="toppings" value="Strawberries">
+                Strawberries
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="toppings" value="Bananas">
+                Bananas
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="toppings" value="Whipped Cream">
+                Whipped Cream
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="toppings" value="Chocolate Chips">
+                Chocolate Chips
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="toppings" value="Nutella">
+                Nutella
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Pickup Information</legend>
+
+            <label for="pickup-date">Pickup Date *</label>
+            <input type="date" id="pickup-date" name="pickupDate" required>
+
+            <label for="pickup-time">Pickup Time *</label>
+            <select id="pickup-time" name="pickupTime" required>
+                <option value="">-- Select a time --</option>
+                <option value="10:00 AM">10:00 AM</option>
+                <option value="11:00 AM">11:00 AM</option>
+                <option value="12:00 PM">12:00 PM</option>
+                <option value="1:00 PM">1:00 PM</option>
+                <option value="2:00 PM">2:00 PM</option>
+                <option value="3:00 PM">3:00 PM</option>
+                <option value="4:00 PM">4:00 PM</option>
+                <option value="5:00 PM">5:00 PM</option>
+            </select>
+
+            <label for="instructions">Special Instructions</label>
+            <textarea id="instructions" name="instructions" rows="4"
+                      maxlength="300"
+                      placeholder="Add any special requests..."></textarea>
+        </fieldset>
+
+        <div class="total-box">
+            <span>Estimated Total:</span>
+            <strong id="total">$0.00</strong>
+        </div>
+
+        <button type="submit" class="button">Submit Order</button>
+    </form>
+
+    <section id="confirmation" class="confirmation hidden"></section>
+</main>
+
+<footer>
+    <p>&copy; 2026 Stack and Drizzle Co.</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
