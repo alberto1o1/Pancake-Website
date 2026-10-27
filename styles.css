@@ -1,0 +1,252 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff8f0;
+    color: #342017;
+    line-height: 1.6;
+}
+
+.home-image {
+    display: block;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #633b28;
+    color: white;
+    text-align: center;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+.header-content {
+    padding: 1.5rem 1rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.3rem;
+}
+
+header p {
+    margin: .25rem 0;
+}
+
+nav {
+    background-color: #3f2418;
+    padding: .8rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 .8rem;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(rgba(255, 248, 240, .88), rgba(255, 248, 240, .88)),
+                radial-gradient(circle at center, #f2c27b, #fff8f0);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+    font-size: 1.1rem;
+}
+
+.button {
+    display: inline-block;
+    background-color: #d47a25;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: .75rem 1.3rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #ad5e18;
+}
+
+.content-section,
+.form-container {
+    width: min(900px, 92%);
+    margin: 2rem auto;
+}
+
+.content-section > h2,
+.form-container > h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.cards,
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+}
+
+.card,
+.menu-item,
+.contact-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+
+.card h3,
+.menu-item h3 {
+    color: #633b28;
+}
+
+.menu-item strong {
+    font-size: 1.2rem;
+}
+
+.section-space {
+    margin-top: 2.5rem;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.form-container {
+    max-width: 750px;
+}
+
+form {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .08);
+}
+
+fieldset {
+    border: 1px solid #d4c0b0;
+    border-radius: 6px;
+    margin-bottom: 1.5rem;
+    padding: 1.2rem;
+}
+
+legend {
+    font-weight: bold;
+    color: #633b28;
+    padding: 0 .5rem;
+}
+
+label,
+.form-label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: .3rem;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: .7rem;
+    border: 1px solid #b9a79a;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.checkbox-label {
+    font-weight: normal;
+    margin-top: .5rem;
+}
+
+.checkbox-label input {
+    margin-right: .5rem;
+}
+
+.total-box {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff0dc;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.confirmation {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    background-color: #e7f5e7;
+    border: 1px solid #8db88d;
+}
+
+.error-message {
+    color: #a00000;
+    background-color: #ffe5e5;
+    border: 1px solid #d88;
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 3rem;
+    background-color: #3f2418;
+    color: white;
+}
+
+@media (max-width: 700px) {
+    .cards,
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: .3rem .5rem;
+    }
+
+    .hero h2 {
+        font-size: 2rem;
+    }
+}
